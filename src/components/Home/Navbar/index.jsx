@@ -1,8 +1,8 @@
-import { Wrapper, Logo, Nav, NavItems, NavItem, Icon } from "./style.js";
+import { Logo, Nav, NavItems, NavItem, Icon } from "./style.js";
 
 const Navbar = () => {
   return (
-    <Wrapper>
+    <div className="container">
       <Nav>
         <Logo>
           <a href="#">Logo</a>
@@ -33,7 +33,7 @@ const Navbar = () => {
           </NavItem>
         </NavItems>
       </Nav>
-    </Wrapper>
+    </div>
   );
 };
 

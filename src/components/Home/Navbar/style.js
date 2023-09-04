@@ -1,18 +1,15 @@
 import { styled } from "styled-components";
-import { ReactComponent as location } from "../../assets/icons/location.svg";
-import { ReactComponent as contact } from "../../assets/icons/contact.svg";
+import { ReactComponent as location } from "../../../assets/icons/location.svg";
+import { ReactComponent as contact } from "../../../assets/icons/contact.svg";
 
-const Wrapper = styled.div`
-  /* display: flex; */
-`;
 const Nav = styled.nav`
   display: flex;
   align-items: center;
   height: 80px;
 `;
 const Logo = styled.div`
-  flex: 0 0 15%;
-  max-width: 15%;
+  flex: 0 0 10%;
+  max-width: 10%;
   text-align: center;
   a {
     font-size: 32px;
@@ -22,8 +19,8 @@ const Logo = styled.div`
   }
 `;
 const NavItems = styled.ul`
-  flex: 0 0 85%;
-  max-width: 85%;
+  flex: 0 0 90%;
+  max-width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,11 +43,7 @@ const NavItem = styled.li`
 
 const Icon = styled.div``;
 
-Icon.Location = styled(location)`
-  /* color: red; */
-`;
-Icon.Login = styled(contact)`
-  /* color: red; */
-`;
+Icon.Location = styled(location)``;
+Icon.Login = styled(contact)``;
 
-export { Wrapper, Nav, Logo, NavItems, NavItem, Icon };
+export { Nav, Logo, NavItems, NavItem, Icon };
