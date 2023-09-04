@@ -1,9 +1,11 @@
 import { styled } from "styled-components";
+import Img from "../../../assets/image/header-img.png";
 
-const Wrapper = styled.div`
-  position: relative;
-`;
-const HeaderImg = styled.img`
+const Wrapper = styled.div``;
+const HeaderImg = styled.div`
+  background-image: url(${Img});
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
 `;
 const Contents = styled.div`
@@ -11,7 +13,31 @@ const Contents = styled.div`
 `;
 const Content = styled.div`
   flex: 1;
-  background-color: red;
+  padding: 126px 60px 175px 0;
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00093c;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00093c;
+    margin-top: 41px;
 `;
 
 export { Wrapper, HeaderImg, Contents, Content };

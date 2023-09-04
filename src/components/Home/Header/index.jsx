@@ -1,14 +1,18 @@
 import { HeaderImg, Wrapper, Contents, Content } from "./style.js";
-import Img from "../../../assets/image/header-img.png";
 
 const Header = () => {
   return (
     <Wrapper>
-      <HeaderImg src={Img} />
-      <Contents className="container">
-        <Content>2</Content>
-        <Content>1</Content>
-      </Contents>
+      <HeaderImg>
+        <Contents className="container">
+          <Content bg="true">
+            <h1>Образовательная платформа</h1>
+            <h1>ХОД Future Academy</h1>
+            <p>Актуальные знания для новичков и профессионалов</p>
+          </Content>
+          <Content></Content>
+        </Contents>
+      </HeaderImg>
     </Wrapper>
   );
 };

@@ -10,7 +10,7 @@ const Nav = styled.nav`
 const Logo = styled.div`
   flex: 0 0 10%;
   max-width: 10%;
-  text-align: center;
+  text-align: left;
   a {
     font-size: 32px;
     font-weight: 800;
