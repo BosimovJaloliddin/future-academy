@@ -38,6 +38,7 @@ const Content = styled.div`
     text-align: left;
     color: #00093c;
     margin-top: 41px;
+  }
 `;
 
 export { Wrapper, HeaderImg, Contents, Content };
