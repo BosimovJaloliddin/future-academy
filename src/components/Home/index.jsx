@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
+import Category from "./Category";
 import "./style.js";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
+      <Category />
     </div>
   );
 };

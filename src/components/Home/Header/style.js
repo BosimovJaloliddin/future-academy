@@ -1,12 +1,12 @@
 import { styled } from "styled-components";
 import Img from "../../../assets/image/header-img.png";
 
-const Wrapper = styled.div``;
 const HeaderImg = styled.div`
   background-image: url(${Img});
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  background-position-x: center;
+  max-width: 100%;
 `;
 const Contents = styled.div`
   display: flex;
@@ -41,4 +41,4 @@ const Content = styled.div`
   }
 `;
 
-export { Wrapper, HeaderImg, Contents, Content };
+export { HeaderImg, Contents, Content };
