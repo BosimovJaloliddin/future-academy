@@ -1,8 +1,9 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Category from "./Category";
-import "./style.js";
 import Player from "../Player";
+import Statisticas from "./Statisticas";
+import "./style.js";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Category />
       <Player />
+      <Statisticas />
     </div>
   );
 };

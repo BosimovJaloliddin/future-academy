@@ -4,7 +4,7 @@
   --bg-color-c7eeff: #c7eeff;
   --bg-color-ffce94: #ffce94;
   --bg-color-ffe38e: #ffe38e;
-  --bg-color-ddddff: #ddddff;
+  --bg-color-ddddff: #ddfeff;
   --bg-color-b8efcf: #b8efcf;
   --bg-color-c7eeff: #c7eeff;
   --bg-color-ffe9a8: #ffe9a8;
@@ -16,6 +16,7 @@
   --text-color-white: #ffffff;
 
   --padding: 0 40px;
+  color: #4e67cb;
 }
 body {
   font-family: "Montserrat", sans-serif;
