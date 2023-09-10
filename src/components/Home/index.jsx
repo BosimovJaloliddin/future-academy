@@ -3,7 +3,9 @@ import Header from "./Header";
 import Category from "./Category";
 import Player from "../Player";
 import Statisticas from "./Statisticas";
-import "./style.js";
+import Announcement from "../Announcement";
+import Info from "./Info";
+import { Box } from "./style.js";
 
 const Home = () => {
   return (
@@ -13,6 +15,10 @@ const Home = () => {
       <Category />
       <Player />
       <Statisticas />
+      <Box>
+        <Announcement />
+        <Info />
+      </Box>
     </div>
   );
 };

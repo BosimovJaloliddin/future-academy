@@ -11,12 +11,18 @@
   --bg-color-ffeef6: #ffeef6;
   --bg-color-ddddff: #ddddff;
 
+  --bg-color-c5ddff: #c5ddff;
+
   --text-color-title: #000000;
   --text-color-subtitle: #333333;
   --text-color-white: #ffffff;
 
   --padding: 0 40px;
   color: #4e67cb;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Montserrat", sans-serif;
