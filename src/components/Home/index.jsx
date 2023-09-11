@@ -6,6 +6,7 @@ import Statisticas from "./Statisticas";
 import Announcement from "../Announcement";
 import Info from "./Info";
 import { Box } from "./style.js";
+import Comment from "../Comment";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Announcement />
         <Info />
       </Box>
+      <Comment />
     </div>
   );
 };
