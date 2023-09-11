@@ -57,13 +57,13 @@ const Btn = styled.button`
   max-width: 3%;
 
   height: 40px;
-  border-radius: 50%;
   background-color: #ffffff;
+  border-radius: 50%;
+  border: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    box-shadow: 0 0 2px #ffffff;
-    background-color: #c5b8b8;
+    box-shadow: 0 0 8px #ffffff;
   }
 `;
 
@@ -120,6 +120,9 @@ Icon.Arrow = styled(arrow)`
   width: 12px;
   height: 12px;
   transform: ${({ $rotate }) => $rotate && `rotate(180deg)`};
+  path {
+    fill: #222222;
+  }
 `;
 
 export {
