@@ -76,7 +76,8 @@ const Content = styled.div`
 const UserImg = styled.img`
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 100px;
+  border: 3px solid #00093c;
 `;
 const UserInfo = styled.h6`
   font-family: "Montserrat";
