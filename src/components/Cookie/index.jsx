@@ -16,7 +16,6 @@ const Cookie = (prop) => {
     top,
     left,
   } = prop.data;
-  console.log(wTop);
   return (
     <WrapCookie $wTop={wTop} $wLeft={wLeft}>
       <CookieMessage>

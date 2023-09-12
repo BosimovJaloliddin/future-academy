@@ -9,6 +9,7 @@ import { Box } from "./style.js";
 import Comment from "../Comment";
 import CourseInfo from "./CourseInfo";
 import LeaveAplication from "../LeaveAplication";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Comment />
       <CourseInfo />
       <LeaveAplication />
+      <Footer />
     </div>
   );
 };

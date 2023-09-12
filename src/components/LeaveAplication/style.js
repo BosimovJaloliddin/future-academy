@@ -1,11 +1,13 @@
 import { styled } from "styled-components";
 
 const Wrapper = styled.div`
+  position: relative;
+  top: 40px;
   display: flex;
   align-items: center;
   gap: 5%;
 
-  margin-top: 129px;
+  margin-top: 100px;
   padding: 40px 40px 40px 0;
   border-radius: 20px;
   background-color: var(--white);
