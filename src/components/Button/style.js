@@ -53,6 +53,9 @@ const activeBg = ({ $btn }) => {
   }[$btn];
 };
 const Btn = styled.button`
+  display: inline-block;
+  width: ${({ $w }) => $w && $w};
+
   display: flex;
   justify-content: center;
   align-items: center;

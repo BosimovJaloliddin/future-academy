@@ -39,13 +39,14 @@ const Title = styled.h2`
   color: var(--text-color-title);
 `;
 const Subtitle = styled.p`
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-color-subtitle);
+  margin-top: 29px;
 `;
 const Btn = styled.button`
   max-width: 222px;

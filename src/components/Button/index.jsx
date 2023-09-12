@@ -1,11 +1,13 @@
 import { Btn } from "./style";
 
 const Button = (prop) => {
-  const { type, title } = prop.data;
+  const { type, title, width } = prop.data;
 
   return (
     <>
-      <Btn $btn={type}>{title}</Btn>
+      <Btn $btn={type} $w={width}>
+        {title}
+      </Btn>
     </>
   );
 };

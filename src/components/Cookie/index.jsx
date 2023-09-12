@@ -3,17 +3,37 @@ import CookieInfoImg from "../../assets/icons/cookie-info.png";
 import { CookieMessage, WrapCookie, Message, CookieStyle, Info } from "./style";
 
 const Cookie = (prop) => {
-  const { widthC, heightC, widthM, heightM } = prop.data;
+  const {
+    wTop,
+    wLeft,
+    widthC,
+    heightC,
+    widthM,
+    heightM,
+    title,
+    subtitle,
+    comment,
+    top,
+    left,
+  } = prop.data;
+  console.log(wTop);
   return (
-    <WrapCookie>
+    <WrapCookie $wTop={wTop} $wLeft={wLeft}>
       <CookieMessage>
-        <Message $wM={widthM} $hM={heightM} src={CookieInfoImg} alt="cookie" />
-        <Info $wM={widthM} $hM={heightM}>
+        <Message
+          $top={top}
+          $left={left}
+          $wM={widthM}
+          $hM={heightM}
+          src={CookieInfoImg}
+          alt="cookie"
+        />
+        <Info $top={top} $left={left} $wM={widthM} $hM={heightM}>
           <span>
-            <b>Кем вы хотите стать?</b>
+            <b>{title}</b>
           </span>
-          <span>Пора найти себя и выбрать подходящий курс :</span>
-          <span>Удачи!</span>
+          <span>{subtitle}</span>
+          <span>{comment}</span>
         </Info>
       </CookieMessage>
       <CookieStyle $wC={widthC} $hC={heightC} src={CookieImg} alt="cookie" />

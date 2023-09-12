@@ -8,6 +8,7 @@ import Info from "./Info";
 import { Box } from "./style.js";
 import Comment from "../Comment";
 import CourseInfo from "./CourseInfo";
+import LeaveAplication from "../LeaveAplication";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       </Box>
       <Comment />
       <CourseInfo />
+      <LeaveAplication />
     </div>
   );
 };
