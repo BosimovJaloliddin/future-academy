@@ -101,6 +101,9 @@ const UserCours = styled.p`
   margin-top: 6px;
 `;
 const UserComment = styled.p`
+  max-height: 300px;
+  overflow: hidden;
+
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;

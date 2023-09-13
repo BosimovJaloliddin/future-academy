@@ -1,19 +1,16 @@
 import {
   MainTabs,
   BtnItems,
-  InfoItem,
   TabIcon,
   TabInfo,
   TabSubtitle,
   TabTitle,
   TabWrap,
-  Wrapper,
 } from "./style";
-import Child from "../../../assets/icons/children-14.png";
-import Adults from "../../../assets/icons/children-100.png";
-import Teenager from "../../../assets/icons/children -16.png";
-import Button from "../../Button/index";
-import Cookie from "../../Cookie";
+import Child from "../../assets/icons/children-14.png";
+import Adults from "../../assets/icons/children-100.png";
+import Teenager from "../../assets/icons/children -16.png";
+import Button from "../Button/index";
 
 const Category = () => {
   const data = [
@@ -81,43 +78,26 @@ const Category = () => {
     },
   ];
   return (
-    <Wrapper className="container">
-      <InfoItem>
-        <Cookie
-          data={{
-            widthC: 168,
-            heightC: 188,
-            widthM: 260,
-            heightM: 190,
-            title: "Кем вы хотите стать? ",
-            subtitle: "Пора найти себя и выбрать подходящий курс :)",
-            comment: "Удачи!",
-            top: -130,
-            left: 20,
-          }}
-        />
-      </InfoItem>
-      <MainTabs
-        defaultActiveKey="tab1"
-        items={data?.map((v) => {
-          return {
-            label: (
-              <TabWrap>
-                <TabIcon>
-                  <img src={v.img} alt="child" />
-                </TabIcon>
-                <TabInfo>
-                  <TabTitle>{v.title}</TabTitle>
-                  <TabSubtitle>{v.subtitle}</TabSubtitle>
-                </TabInfo>
-              </TabWrap>
-            ),
-            key: v.id,
-            children: v.status,
-          };
-        })}
-      />
-    </Wrapper>
+    <MainTabs
+      defaultActiveKey="tab1"
+      items={data?.map((v) => {
+        return {
+          label: (
+            <TabWrap>
+              <TabIcon>
+                <img src={v.img} alt="child" />
+              </TabIcon>
+              <TabInfo>
+                <TabTitle>{v.title}</TabTitle>
+                <TabSubtitle>{v.subtitle}</TabSubtitle>
+              </TabInfo>
+            </TabWrap>
+          ),
+          key: v.id,
+          children: v.status,
+        };
+      })}
+    />
   );
 };
 

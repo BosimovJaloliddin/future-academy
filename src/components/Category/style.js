@@ -1,19 +1,6 @@
 import { styled } from "styled-components";
 import { Tabs } from "antd";
 
-const Wrapper = styled.div`
-  margin-top: 106px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-`;
-const InfoItem = styled.div`
-  position: relative;
-  flex: 0 0 20%;
-  max-width: 20%;
-`;
-
 const BtnItems = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -24,8 +11,7 @@ const BtnItems = styled.div`
 `;
 
 const MainTabs = styled(Tabs)`
-  flex: 0 0 70%;
-  max-width: 70%;
+  width: 100%;
 `;
 const TabWrap = styled.div`
   display: flex;
@@ -67,14 +53,4 @@ const TabSubtitle = styled.span`
   color: #4f4f4f;
 `;
 
-export {
-  MainTabs,
-  BtnItems,
-  InfoItem,
-  Wrapper,
-  TabWrap,
-  TabIcon,
-  TabInfo,
-  TabTitle,
-  TabSubtitle,
-};
+export { MainTabs, BtnItems, TabWrap, TabIcon, TabInfo, TabTitle, TabSubtitle };

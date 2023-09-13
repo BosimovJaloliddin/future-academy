@@ -1,6 +1,5 @@
-import Navbar from "./Navbar";
 import Header from "./Header";
-import Category from "./Category";
+import HomeCategory from "./HomeCategory";
 import Player from "../Player";
 import Statisticas from "./Statisticas";
 import Announcement from "../Announcement";
@@ -13,10 +12,9 @@ import Footer from "../Footer";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <>
       <Header />
-      <Category />
+      <HomeCategory />
       <Player />
       <Statisticas />
       <Box>
@@ -27,7 +25,7 @@ const Home = () => {
       <CourseInfo />
       <LeaveAplication />
       <Footer />
-    </div>
+    </>
   );
 };
 
