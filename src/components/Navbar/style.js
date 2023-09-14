@@ -3,6 +3,14 @@ import { ReactComponent as location } from "../../assets/icons/location.svg";
 import { ReactComponent as contact } from "../../assets/icons/contact.svg";
 import { ReactComponent as logo } from "../../assets/icons/logo.svg";
 
+const Bg = styled.div`
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #00093c;
+  max-height: 110px;
+  z-index: 10;
+`;
 const Nav = styled.nav`
   display: flex;
   align-items: center;
@@ -36,7 +44,7 @@ const NavItem = styled.li`
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-color-title);
+  color: var(--text-color-white);
   line-height: 17px;
   letter-spacing: 0em;
   text-decoration: none;
@@ -45,8 +53,20 @@ const NavItem = styled.li`
 
 const Icon = styled.div``;
 
-Icon.Location = styled(location)``;
-Icon.Login = styled(contact)``;
-Icon.Logo = styled(logo)``;
+Icon.Location = styled(location)`
+  path {
+    fill: #ffffff;
+  }
+`;
+Icon.Login = styled(contact)`
+  path {
+    fill: #ffffff;
+  }
+`;
+Icon.Logo = styled(logo)`
+  path {
+    fill: #ffffff;
+  }
+`;
 
-export { Nav, Logo, NavItems, NavItem, Icon };
+export { Bg, Nav, Logo, NavItems, NavItem, Icon };

@@ -10,13 +10,13 @@ const Title = styled.h1`
   text-align: left;
   color: var(--text-color-title);
 
-  margin-top: 38px;
+  padding-top: 148px;
 `;
 const Wrapper = styled.div`
   display: ${({ $fx }) => $fx && $fx};
   justify-content: space-between;
   gap: 3%;
-  margin-top: ${({ $mt }) => $mt && `${$mt}px`};
+  padding-top: ${({ $mt }) => $mt && `${$mt}px`};
 `;
 const Content = styled.div`
   flex: 0 0 ${({ $f }) => ($f ? `${$f}%` : "40%")};
