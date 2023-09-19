@@ -14,13 +14,17 @@ const Title = styled.h1`
 `;
 const Wrapper = styled.div`
   display: ${({ $fx }) => $fx && $fx};
-  justify-content: space-between;
+  flex-wrap: ${({ $fw }) => $fw && $fw};
+  justify-content: ${({ $jc }) => ($jc ? $jc : "space-between")};
   gap: 3%;
   padding-top: ${({ $mt }) => $mt && `${$mt}px`};
+  margin-top: ${({ $mt }) => $mt && `${$mt}px`};
 `;
 const Content = styled.div`
   flex: 0 0 ${({ $f }) => ($f ? `${$f}%` : "40%")};
   max-width: ${({ $f }) => ($f ? `${$f}%` : "40%")};
+
+  margin-bottom: ${({ $mb }) => $mb && `${$mb}px`};
 `;
 
 export { Container, Title, Wrapper, Content };
