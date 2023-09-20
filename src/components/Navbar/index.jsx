@@ -1,8 +1,13 @@
 import { Logo, Nav, NavItems, NavItem, Icon, Bg } from "./style.js";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { navbar } from "../../utils/navbar.jsx";
 
 const Navbar = () => {
+  const location = useLocation();
   const navigate = useNavigate();
+  const active = (title) => {
+    return location.pathname === title ? true : false;
+  };
   return (
     <>
       <Bg>
@@ -11,23 +16,19 @@ const Navbar = () => {
             <Icon.Logo />
           </Logo>
           <NavItems className="nav-items">
-            <NavItem
-              onClick={() => navigate("/all_course")}
-              className="nav-item"
-            >
-              Все курсы
-            </NavItem>
-            <NavItem className="nav-item">Мероприятия</NavItem>
-            <NavItem className="nav-item">Базы знаний</NavItem>
-            <NavItem className="nav-item">Базы знаний</NavItem>
-            <NavItem className="nav-item">
-              <Icon.Location />
-              Нижний Новгород
-            </NavItem>
-            <NavItem className="nav-item">
-              <Icon.Login />8 800 950-33-98
-            </NavItem>
-            <NavItem className="nav-item">Войти</NavItem>
+            {navbar.map((v) => {
+              return (
+                <NavItem
+                  key={v.id}
+                  onClick={() => navigate(v.path)}
+                  $active={active(v.path)}
+                  className="nav-item"
+                >
+                  {v.icon && v.icon}
+                  {v.title}
+                </NavItem>
+              );
+            })}
           </NavItems>
         </Nav>
       </Bg>

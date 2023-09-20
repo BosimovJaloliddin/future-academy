@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { ReactComponent as location } from "../../assets/icons/location.svg";
-import { ReactComponent as contact } from "../../assets/icons/contact.svg";
+import { ReactComponent as user } from "../../assets/icons/nav-user.svg";
 import { ReactComponent as logo } from "../../assets/icons/logo.svg";
 
 const Bg = styled.div`
@@ -8,13 +8,13 @@ const Bg = styled.div`
   left: 0;
   right: 0;
   background-color: #00093c;
-  max-height: 110px;
+  max-height: 90px;
   z-index: 10;
 `;
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
 `;
 const Logo = styled.div`
   flex: 0 0 10%;
@@ -44,7 +44,8 @@ const NavItem = styled.li`
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-color-white);
+
+  color: ${({ $active }) => ($active ? "red" : "var(--text-color-white)")};
   line-height: 17px;
   letter-spacing: 0em;
   text-decoration: none;
@@ -58,12 +59,10 @@ Icon.Location = styled(location)`
     fill: #ffffff;
   }
 `;
-Icon.Login = styled(contact)`
-  path {
-    fill: #ffffff;
-  }
-`;
+Icon.User = styled(user)``;
 Icon.Logo = styled(logo)`
+  width: 80px;
+  height: 60px;
   path {
     fill: #ffffff;
   }
