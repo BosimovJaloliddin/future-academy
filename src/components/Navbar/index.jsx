@@ -16,17 +16,19 @@ const Navbar = () => {
             <Icon.Logo />
           </Logo>
           <NavItems className="nav-items">
-            {navbar.map((v) => {
+            {navbar.map(({ id, path, icon, title, isPrivate }) => {
               return (
-                <NavItem
-                  key={v.id}
-                  onClick={() => navigate(v.path)}
-                  $active={active(v.path)}
-                  className="nav-item"
-                >
-                  {v.icon && v.icon}
-                  {v.title}
-                </NavItem>
+                !isPrivate && (
+                  <NavItem
+                    key={id}
+                    onClick={() => navigate(path)}
+                    $active={active(path)}
+                    className="nav-item"
+                  >
+                    {icon && icon}
+                    {title}
+                  </NavItem>
+                )
               );
             })}
           </NavItems>

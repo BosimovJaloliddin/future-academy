@@ -7,12 +7,14 @@ const Root = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Navbar />}>
-          {navbar?.map(({ id, path, element }) => {
-            return <Route key={id} path={path} element={element} />;
+          <Route path="/" element={<Navigate to="/home" />} />
+          {navbar?.map(({ id, path, element, isPrivate }) => {
+            return (
+              !isPrivate && <Route key={id} path={path} element={element} />
+            );
           })}
         </Route>
         <Route path="*" element={<h1>404 NOT FOUND</h1>} />
-        <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
     </BrowserRouter>
   );

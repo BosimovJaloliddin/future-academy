@@ -8,7 +8,7 @@ export const navbar = [
     element: <HomePage />,
     title: "Home",
     path: "/home",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -16,7 +16,7 @@ export const navbar = [
     element: <AllCoursePage />,
     title: "Все курсы",
     path: "/all_course",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -24,7 +24,7 @@ export const navbar = [
     element: <h1>Мероприятия</h1>,
     title: "Мероприятия",
     path: "/no",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -32,7 +32,7 @@ export const navbar = [
     element: <h1>Базы знаний</h1>,
     title: "Базы знаний",
     path: "/",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -40,7 +40,7 @@ export const navbar = [
     element: <h1>Карьера</h1>,
     title: "Карьера",
     path: "/karyera",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -48,7 +48,7 @@ export const navbar = [
     element: <h1>Нижний Новгород</h1>,
     title: "Нижний Новгород",
     path: "/location",
-    private: false,
+    isPrivate: false,
     hidden: false,
     icon: <Icon.Location />,
   },
@@ -57,7 +57,7 @@ export const navbar = [
     element: <h1>8 800 950-33-98</h1>,
     title: "8 800 950-33-98",
     path: "/contact",
-    private: false,
+    isPrivate: false,
     hidden: false,
   },
   {
@@ -65,7 +65,7 @@ export const navbar = [
     element: <h1>Войти</h1>,
     title: `Войти`,
     path: "/login",
-    private: false,
+    isPrivate: false,
     hidden: false,
     icon: <Icon.User />,
   },
