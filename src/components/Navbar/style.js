@@ -44,12 +44,18 @@ const NavItem = styled.li`
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
-
   color: ${({ $active }) => ($active ? "red" : "var(--text-color-white)")};
   line-height: 17px;
   letter-spacing: 0em;
   text-decoration: none;
   cursor: pointer;
+
+  a {
+    color: ${({ $active }) => ($active ? "red" : "var(--text-color-white)")};
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-decoration: none;
+  }
 `;
 
 const Icon = styled.div``;

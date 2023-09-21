@@ -1,5 +1,5 @@
 import { Logo, Nav, NavItems, NavItem, Icon, Bg } from "./style.js";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar.jsx";
 
 const Navbar = () => {
@@ -16,21 +16,28 @@ const Navbar = () => {
             <Icon.Logo />
           </Logo>
           <NavItems className="nav-items">
-            {navbar.map(({ id, path, icon, title, isPrivate }) => {
+            {navbar.map(({ id, path, title, hidden }) => {
               return (
-                !isPrivate && (
-                  <NavItem
-                    key={id}
-                    onClick={() => navigate(path)}
-                    $active={active(path)}
-                    className="nav-item"
-                  >
-                    {icon && icon}
-                    {title}
+                !hidden && (
+                  <NavItem key={id} $active={active(path)} className="nav-item">
+                    <NavLink to={path}>{title}</NavLink>
                   </NavItem>
                 )
               );
             })}
+            <NavItem className="nav-item">
+              <Icon.Location /> Нижний Новгород
+            </NavItem>
+            <NavItem className="nav-item">8 800 950-33-98</NavItem>
+
+            <NavItem
+              onClick={() => navigate("/login")}
+              $active={active("/login")}
+              className="nav-item"
+            >
+              <Icon.User />
+              <NavLink>Войти</NavLink>
+            </NavItem>
           </NavItems>
         </Nav>
       </Bg>

@@ -28,9 +28,11 @@ const Cookie = (prop) => {
           alt="cookie"
         />
         <Info $top={top} $left={left} $wM={widthM} $hM={heightM}>
-          <span>
-            <b>{title}</b>
-          </span>
+          {title && (
+            <span>
+              <b>{title}</b>
+            </span>
+          )}
           <span>{subtitle}</span>
           <span>{comment}</span>
         </Info>

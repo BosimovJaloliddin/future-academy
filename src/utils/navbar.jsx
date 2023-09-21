@@ -1,6 +1,6 @@
 import HomePage from "../pages/HomePage";
 import AllCoursePage from "../pages/AllCoursePage";
-import { Icon } from "../components/Navbar/style";
+import Register from "../components/Register";
 
 export const navbar = [
   {
@@ -9,7 +9,7 @@ export const navbar = [
     title: "Home",
     path: "/home",
     isPrivate: false,
-    hidden: false,
+    hidden: true,
   },
   {
     id: 2,
@@ -44,29 +44,11 @@ export const navbar = [
     hidden: false,
   },
   {
-    id: 6,
-    element: <h1>Нижний Новгород</h1>,
-    title: "Нижний Новгород",
-    path: "/location",
-    isPrivate: false,
-    hidden: false,
-    icon: <Icon.Location />,
-  },
-  {
-    id: 7,
-    element: <h1>8 800 950-33-98</h1>,
-    title: "8 800 950-33-98",
-    path: "/contact",
-    isPrivate: false,
-    hidden: false,
-  },
-  {
     id: 8,
-    element: <h1>Войти</h1>,
+    element: <Register />,
     title: `Войти`,
     path: "/login",
     isPrivate: false,
-    hidden: false,
-    icon: <Icon.User />,
+    hidden: true,
   },
 ];

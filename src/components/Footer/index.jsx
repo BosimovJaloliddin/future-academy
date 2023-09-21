@@ -5,7 +5,6 @@ const Footer = () => {
     <Bg>
       <Wrapper className="container">
         <Content $f={20}>
-          {/* user contactes */}
           <Icon.Logo />
           <Title $mt={43}>8 800 950-33-98 </Title>
           <Subtitle $mt={12}>г. Москва, ул. Ленина, д. 50</Subtitle>
