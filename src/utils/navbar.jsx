@@ -1,6 +1,6 @@
 import HomePage from "../pages/HomePage";
 import AllCoursePage from "../pages/AllCoursePage";
-import Register from "../components/Register";
+import RegisterPage from "../pages/RegisterPage";
 
 export const navbar = [
   {
@@ -45,7 +45,7 @@ export const navbar = [
   },
   {
     id: 8,
-    element: <Register />,
+    element: <RegisterPage />,
     title: `Войти`,
     path: "/login",
     isPrivate: false,
