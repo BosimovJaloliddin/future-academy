@@ -7,6 +7,7 @@ const SignUp = () => {
         <Wrapper $mt={50} $fd="column" $gap={20}>
           <Input type="text" placeholder="name" />
           <Input type="text" placeholder="surname" />
+          <Input type="text" placeholder="login" />
           <Input type="email" placeholder="email" />
           <Input type="password" placeholder="create password" />
         </Wrapper>

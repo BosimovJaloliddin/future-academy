@@ -1,10 +1,13 @@
 import { Btn } from "./style";
 
 const Button = (prop) => {
-  const { type, title, width } = prop.data;
+  const {
+    data: { type, title, width },
+    onClick,
+  } = prop;
   return (
     <>
-      <Btn $btn={type} $w={width}>
+      <Btn onClick={onClick} type="button" $btn={type} $w={width}>
         {title}
       </Btn>
     </>

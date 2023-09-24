@@ -4,9 +4,6 @@ import SignUp from "../SignUp";
 import Cookie from "../Cookie";
 import Footer from "../Footer";
 
-// const onChange = (key) => {
-//   console.log(key);
-// };
 const items = [
   {
     key: "1",

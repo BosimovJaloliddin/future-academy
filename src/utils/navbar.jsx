@@ -1,6 +1,7 @@
 import HomePage from "../pages/HomePage";
 import AllCoursePage from "../pages/AllCoursePage";
 import RegisterPage from "../pages/RegisterPage";
+import ChatsPage from "../pages/ChatsPage";
 
 export const navbar = [
   {
@@ -21,10 +22,10 @@ export const navbar = [
   },
   {
     id: 3,
-    element: <h1>Мероприятия</h1>,
+    element: <ChatsPage />,
     title: "Мероприятия",
-    path: "/no",
-    isPrivate: false,
+    path: "/chats",
+    isPrivate: true,
     hidden: false,
   },
   {
