@@ -2,34 +2,33 @@ import { styled } from "styled-components";
 import headerImg from "../../../assets/image/chat-header-img.png";
 
 const Bg = styled.div`
-  background-color: red;
+  background-color: #00093c;
 `;
 const Container = styled.div`
-  width: 100%;
-  max-height: 480px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2%;
 `;
 const Wrapper = styled.div`
-  flex: 0 0 ${({ $f }) => $f && `${$f}%`};
-  max-width: ${({ $f }) => $f && `${$f}%`};
+  flex: 0 0 53%;
+  max-width: 53%;
   padding-bottom: ${({ $pb }) => $pb && `${$pb}px`};
   padding-top: ${({ $pt }) => $pt && `${$pt}px`};
 `;
 const Contents = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2%;
   margin-top: 60px;
-`;
-const Img = styled.img`
-  width: 100%;
-  height: 100%;
 `;
 const BgImg = styled.div`
   background-image: url(${headerImg});
   background-repeat: no-repeat;
-  background-size: contain;
-  min-width: 100%;
+  background-size: cover;
+  flex: 0 0 45%;
+  max-width: 45%;
   height: 480px;
 `;
 const Title = styled.h1`
@@ -52,6 +51,8 @@ const Subtitle = styled.h4`
   margin-top: 11px;
 `;
 const HeaderInfo = styled.p`
+  flex: 0 0 30%;
+  max-width: 30%;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
@@ -59,6 +60,8 @@ const HeaderInfo = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
+  padding-top: 16px;
+  border-top: 2px solid #27aae1;
 `;
 const NowRegister = styled.div`
   font-family: "Montserrat";
@@ -77,7 +80,6 @@ export {
   Container,
   Wrapper,
   Contents,
-  Img,
   BgImg,
   Title,
   Subtitle,

@@ -18,13 +18,19 @@ const Header = () => {
   return (
     <Bg>
       <Container className="container">
-        <Wrapper $f={53} $pt={39} $pb={30}>
+        <Wrapper $pt={39} $pb={30}>
           <Title>Название мероприятия</Title>
           <Subtitle>Подпись к названию</Subtitle>
           <Contents>
-            <HeaderInfo>1</HeaderInfo>
-            <HeaderInfo>2</HeaderInfo>
-            <HeaderInfo>3</HeaderInfo>
+            <HeaderInfo>
+              Узнайте самые востребованные профессии, на которые более 113 тысяч
+              вакансий
+            </HeaderInfo>
+            <HeaderInfo>Выберите подходящую именно для вас</HeaderInfo>
+            <HeaderInfo>
+              Сделайте первые шаги к возможности выйти на доход более 100 тысяч
+              рублей
+            </HeaderInfo>
           </Contents>
           <NowRegister>Запишись сейчас</NowRegister>
           <Button
@@ -35,7 +41,7 @@ const Header = () => {
             }}
           />
         </Wrapper>
-        <BgImg $f={45}></BgImg>
+        <BgImg></BgImg>
       </Container>
     </Bg>
   );
