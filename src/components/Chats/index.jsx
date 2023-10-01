@@ -1,5 +1,12 @@
+import Header from "./Header";
+import { Container } from "./style";
+
 const Chats = () => {
-  return <div>Chats</div>;
+  return (
+    <Container>
+      <Header />
+    </Container>
+  );
 };
 
 export default Chats;
