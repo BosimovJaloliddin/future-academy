@@ -1,5 +1,4 @@
 import Button from "../../Button";
-// import headerImg from "../../../assets/image/chat-header-img.png";
 
 import {
   Bg,
@@ -7,7 +6,6 @@ import {
   Container,
   Contents,
   HeaderInfo,
-  //   Img,
   NowRegister,
   Subtitle,
   Title,
