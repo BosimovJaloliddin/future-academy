@@ -15,12 +15,12 @@ const Proggram = () => {
   return (
     <Container className="container">
       <h1 className="title">Программа мероприятия</h1>
-      <p className="subtitle" style={{ marginTop: "9px" }}>
+      <p className="subtitle" style={{ marginTop: "16px" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit,
         egestas ut feugiat id, laoreet volutpat risus.
       </p>
       <Collaps>
-        <Wrapper>
+        <Wrapper $mt={16}>
           <Content onClick={onCollaps}>
             <Title>День первый</Title>
           </Content>
