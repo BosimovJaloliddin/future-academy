@@ -14,6 +14,8 @@ const Title = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   gap: 10%;
 `;
 const Content = styled.div`

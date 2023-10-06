@@ -21,18 +21,15 @@ const ContentOne = styled.div`
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   background-color: var(--bg-color-c5ddff);
-  height: 460px;
   ${style}
 `;
 const ContentTwo = styled.div`
-  height: 220px;
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
   background-color: var(--bg-color-b8efcf);
   ${style}
 `;
 const ContentThere = styled.div`
-  height: 220px;
   grid-column: 4 / span 1;
   grid-row: 1 / span 1;
   background-color: grey;
@@ -40,7 +37,6 @@ const ContentThere = styled.div`
   ${style}
 `;
 const ContentFour = styled.div`
-  height: 220px;
   grid-column: 3 / span 2;
   grid-row: 2 / span 1;
   background-color: coral;

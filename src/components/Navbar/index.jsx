@@ -1,6 +1,6 @@
-import { Logo, Nav, NavItems, NavItem, Icon, Bg } from "./style.js";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar.jsx";
+import { Logo, Nav, NavItems, NavItem, Icon, Bg } from "./style.js";
 
 const Navbar = () => {
   const location = useLocation();
@@ -8,6 +8,7 @@ const Navbar = () => {
   const active = (title) => {
     return location.pathname === title ? true : false;
   };
+
   return (
     <>
       <Bg>

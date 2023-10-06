@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   padding: 40px 40px 40px 0;
   border-radius: 20px;
   background-color: var(--white);
+
+  @media (max-width: 1200px) {
+  }
 `;
 const Content = styled.div`
   position: relative;

@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { ReactComponent as location } from "../../assets/icons/location.svg";
 import { ReactComponent as user } from "../../assets/icons/nav-user.svg";
 import { ReactComponent as logo } from "../../assets/icons/logo.svg";
+import { ReactComponent as bar } from "../../assets/icons/bar.svg";
 
 const Bg = styled.div`
   position: fixed;
@@ -13,6 +14,7 @@ const Bg = styled.div`
 `;
 const Nav = styled.nav`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
 `;
@@ -66,6 +68,7 @@ Icon.Location = styled(location)`
   }
 `;
 Icon.User = styled(user)``;
+Icon.Bar = styled(bar)``;
 Icon.Logo = styled(logo)`
   width: 80px;
   height: 60px;
