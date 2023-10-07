@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <Bg>
       <Wrapper className="container">
-        <Content $f={20}>
+        <Content $f={20} $media-992={5} $none="none">
           <Icon.Logo />
           <Title $mt={43}>8 800 950-33-98 </Title>
           <Subtitle $mt={12}>г. Москва, ул. Ленина, д. 50</Subtitle>
-          <Subtitle $mt={12}>info@hodfutureacademy.ru</Subtitle>
-          <Content $mt={37} $fx="flex" $gap={20}>
+          <Subtitle $mt={12}>info@academy.ru</Subtitle>
+          <Content $f={100} $mt={37} $fx="flex" $fw="true" $gap={10}>
             <a href="https://t.me/bosimovjaloliddin">
               <Icon.Facebook />
             </a>

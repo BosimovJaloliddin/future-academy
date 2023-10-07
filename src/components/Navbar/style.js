@@ -37,6 +37,10 @@ const NavItems = styled.ul`
   justify-content: space-around;
   align-items: center;
   list-style: none;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;
 const NavItem = styled.li`
   display: flex;
@@ -60,6 +64,21 @@ const NavItem = styled.li`
   }
 `;
 
+const Menu = styled.div`
+  display: ${({ $dis }) => $dis && $dis};
+  position: fixed;
+  right: 0;
+  width: 40%;
+  background-color: red;
+
+  @media (max-width: 478px) {
+    width: 100%;
+    height: 100%;
+  }
+`;
+const MenuItems = styled.div``;
+const MenuItem = styled.div``;
+
 const Icon = styled.div``;
 
 Icon.Location = styled(location)`
@@ -77,4 +96,4 @@ Icon.Logo = styled(logo)`
   }
 `;
 
-export { Bg, Nav, Logo, NavItems, NavItem, Icon };
+export { Bg, Nav, Logo, NavItems, NavItem, Menu, MenuItems, MenuItem, Icon };

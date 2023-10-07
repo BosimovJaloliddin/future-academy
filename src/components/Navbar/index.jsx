@@ -1,12 +1,28 @@
+import { useState } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar.jsx";
-import { Logo, Nav, NavItems, NavItem, Icon, Bg } from "./style.js";
+import {
+  Logo,
+  Nav,
+  NavItems,
+  NavItem,
+  Icon,
+  Bg,
+  Menu,
+  MenuItems,
+  MenuItem,
+} from "./style.js";
 
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menu, setMenu] = useState("none");
   const active = (title) => {
     return location.pathname === title ? true : false;
+  };
+
+  const onMenu = () => {
+    menu === "none" ? setMenu("block") : setMenu("none");
   };
 
   return (
@@ -40,7 +56,17 @@ const Navbar = () => {
               <NavLink>Войти</NavLink>
             </NavItem>
           </NavItems>
+          <Icon.Bar onClick={onMenu} />
         </Nav>
+        <Menu $dis={menu}>
+          <MenuItems>
+            <MenuItem>1</MenuItem>
+            <MenuItem>2</MenuItem>
+            <MenuItem>3</MenuItem>
+            <MenuItem>4</MenuItem>
+            <MenuItem>5</MenuItem>
+          </MenuItems>
+        </Menu>
       </Bg>
       <Outlet />
     </>

@@ -30,11 +30,11 @@ const Cookie = (prop) => {
         <Info $top={top} $left={left} $wM={widthM} $hM={heightM}>
           {title && (
             <span>
-              <b>{title}</b>
+              <b>{title || ""}</b>
             </span>
           )}
-          <span>{subtitle}</span>
-          <span>{comment}</span>
+          <span>{subtitle || ""}</span>
+          <span>{comment || ""}</span>
         </Info>
       </CookieMessage>
       <CookieStyle $wC={widthC} $hC={heightC} src={CookieImg} alt="cookie" />

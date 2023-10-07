@@ -11,9 +11,6 @@ const Wrapper = styled.div`
   padding: 40px 40px 40px 0;
   border-radius: 20px;
   background-color: var(--white);
-
-  @media (max-width: 1200px) {
-  }
 `;
 const Content = styled.div`
   position: relative;
@@ -24,6 +21,10 @@ const Content = styled.div`
   flex-direction: ${({ $fd }) => $fd && $fd};
   gap: ${({ $gap }) => $gap && `${$gap}%`};
   margin-top: ${({ $mt }) => $mt && `${$mt}px`};
+
+  @media (max-width: 1200px) {
+    display: ${({ $none }) => $none && $none};
+  }
 `;
 const Input = styled.input`
   flex: 0 0 ${({ $f }) => $f && `${$f}%`};

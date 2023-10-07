@@ -12,17 +12,27 @@ const Bg = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.5%;
+  @media (max-width: 992px) {
+    gap: 1%;
+  }
 `;
 const Content = styled.div`
   flex: 0 0 ${({ $f }) => ($f ? `${$f}%` : "20%")};
+  max-width: ${({ $f }) => ($f ? `${$f}%` : "20%")};
 
   display: ${({ $fx }) => $fx && $fx};
   flex-direction: ${({ $fd }) => $fd && $fd};
   align-items: ${({ $ai }) => ($ai ? $ai : "center")};
   gap: ${({ $gap }) => $gap && `${$gap}px`};
   margin-top: ${({ $mt }) => $mt && `${$mt}px`};
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    display: ${({ $none }) => $none && $none};
+  }
 `;
 const Title = styled.h4`
   font-size: 18px;
@@ -35,13 +45,14 @@ const Title = styled.h4`
   margin-top: ${({ $mt }) => $mt && `${$mt}px`};
 `;
 const Subtitle = styled.span`
-  display: inline-block;
+  display: block;
   font-size: 14px;
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-color-white);
+  overflow: hidden;
 
   margin-top: ${({ $mt }) => $mt && `${$mt}px`};
 `;

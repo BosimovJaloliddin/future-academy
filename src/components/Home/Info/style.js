@@ -4,7 +4,7 @@ import { ReactComponent as arrow } from "../../../assets/icons/arrow-right.svg";
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 20px;
 `;
 
@@ -13,35 +13,55 @@ const style = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding: 24px 0;
   border-radius: 20px;
 `;
 
 const ContentOne = styled.div`
   grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 4;
   background-color: var(--bg-color-c5ddff);
   ${style}
+
+  @media (max-width:992px) {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+  }
 `;
 const ContentTwo = styled.div`
   grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+  grid-row: 1 / span 2;
   background-color: var(--bg-color-b8efcf);
   ${style}
+
+  @media (max-width:992px) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
 `;
 const ContentThere = styled.div`
   grid-column: 4 / span 1;
-  grid-row: 1 / span 1;
+  grid-row: 1 / span 2;
   background-color: grey;
   background-color: var(--bg-color-ffeef6);
   ${style}
+
+  @media (max-width:992px) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+  }
 `;
 const ContentFour = styled.div`
   grid-column: 3 / span 2;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 2;
   background-color: coral;
   background-color: var(--bg-color-ffe38e);
   ${style}
+
+  @media (max-width:992px) {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
 `;
 
 const Img = styled.img`
