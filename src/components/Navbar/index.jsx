@@ -61,7 +61,6 @@ const Navbar = () => {
         <Menu $dis={menu}>
           <MenuItems>
             <MenuItem>1</MenuItem>
-            <MenuItem>1</MenuItem>
             <MenuItem>2</MenuItem>
             <MenuItem>3</MenuItem>
             <MenuItem>4</MenuItem>
